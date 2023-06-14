@@ -74,7 +74,7 @@ public class StudentController {
         return "students/editStudent";
     }
 
-    @PostMapping("students/{id}")
+    @PostMapping("/students/{id}")
     public String updateStudent(@PathVariable int id, @ModelAttribute("student") Student student, Model model) {
 
         System.out.println("UPDATE student");
